@@ -1,0 +1,117 @@
+{% extends "diplom/base.html" %}
+{% block content %}
+{% load static %}
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url('/static/diplom/images/gallery/image-16.jpeg');">
+        <div class="auto-container">
+            <h1>Наша галерея</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container clearfix">
+            <div class="pull-right">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'index' %}">Головна</a></li>
+                    <li><a href="{% url 'index' %}">Сторінки</a></li>
+                    <li>Наша галерея</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Gallery Section-->
+    <section class="gallery-section">
+        <h2 style="text-align: center;">Галерея</h2>
+    	<div class="auto-container">
+            
+            <!--Sortable Masonry-->
+            <div class="sortable-masonry">
+                <!--Filter-->
+                <div class="filters text-center">
+                <div class="icon-box"><span class="fa fa-picture-o"></span></div>
+                
+                    <ul class="filter-tabs filter-btns clearfix">
+                        <li class="active filter" data-role="button" data-filter=".all">Усі проєкти</li>
+                        <li class="filter" data-role="button" data-filter=".painting">Виробництво</li>
+                        <li class="filter" data-role="button" data-filter=".flooring">Машини</li>
+                        <li class="filter" data-role="button" data-filter=".tile-marble">Продукти</li>
+                    </ul>
+                </div>
+                
+                
+                <div class="items-container clearfix">
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all tile-marble">
+                        <div class="inner-box">
+                            
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image.jpeg'%}" alt=""></a></figure>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all tile-marble lighting">
+                        <div class="inner-box">
+                           
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-12.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-12.jpeg'%}" alt=""></a></figure>
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all flooring tile-marble furniture lighting">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-13.png'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-13.png'%}" alt=""></a></figure>
+                           
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all painting flooring furniture">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-14.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-14.jpeg'%}" alt=""></a></figure>
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 default-portfolio-item masonry-item all painting tile-marble furniture lighting">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-15.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-15.jpeg'%}" alt=""></a></figure>
+                            <!--Overlay Box-->
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 default-portfolio-item masonry-item all painting flooring tile-marble">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-16.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-16.jpeg'%}" alt=""></a></figure>
+                         
+                        </div>
+                    </div>
+                    
+                    <!--Default Portfolio Item-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 default-portfolio-item masonry-item all flooring furniture lighting">
+                        <div class="inner-box">
+                            <figure class="image-box"><a href="{% static 'diplom/images/gallery/image-17.jpeg'%}" class="lightbox-image" title="Image Caption Here"><img src="{% static 'diplom/images/gallery/image-17.jpeg'%}" alt=""></a></figure>
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div><!--End Sortable Masonry-->
+            
+           
+        
+        </div>    
+        
+        
+    </section>
+{% endblock %}

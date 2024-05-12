@@ -1,0 +1,121 @@
+{% extends "diplom/base.html" %}
+{% block content %}
+{% load static %}
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url('/static/diplom/images/background/image-12.jpeg');">
+        <div class="auto-container">
+            <h1>Наші роботи</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container clearfix">
+            <div class="pull-left"><h2>Наші роботи</h2></div>
+            <div class="pull-right">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'index' %}">Головна</a></li>
+                    <li><a href="{% url 'index' %}">Сторінки</a></li>
+                    <li>Роботи</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Services Section-->
+    <section class="services-section">
+    	<div class="auto-container">
+            
+        	<div class="row clearfix">
+            	
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-26.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-improvement"></span></div>
+                        	<h3>Виробництво</h3>
+                            <div class="text">Наше виробництво обладнане передовими технологіями, які дозволяють нам забезпечити стабільну якість нашої продукції та швидко реагувати на зміни в потребах ринку.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-25.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-layers"></span></div>
+                        	<h3>Автопарк</h3>
+                            <div class="text">Наш сучасний автопарк гарантує надійну та своєчасну доставку нашої продукції безпосередньо на ваше будівельне місце.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-24.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-two"></span></div>
+                        	<h3>Матеріали</h3>
+                            <div class="text">Ми використовуємо лише високоякісні матеріали у виробництві нашого бетону, що гарантує його стійкість та надійність.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-23.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-bright-lightbulb"></span></div>
+                        	<h3>Кваліфіковані кадри</h3>
+                            <div class="text">Наша команда складається з досвідчених фахівців, які мають глибокі знання в галузі будівництва та виробництва бетону.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-22.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-houses"></span></div>
+                        	<h3>Клієнтоорієнтованість</h3>
+                            <div class="text">Ми завжди відкриті до співпраці з нашими клієнтами і готові врахувати їхні потреби та побажання для досягнення найкращого результату.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-21.jpeg'%}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-parquet"></span></div>
+                        	<h3>Продукція</h3>
+                            <div class="text">Наша продукція - це високоякісний бетон, який становить міцну основу для будь-якого будівельного проекту. Він гарантує надійність і довговічність вашої споруди.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Service Block-->
+                <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<figure class="image-box"><img src="{% static 'diplom/images/resource/image-20.png' %}" alt=""></figure>
+                        <div class="lower-content">
+                        	<div class="transparen-icon"><span class="flaticon-copy"></span></div>
+                        	<h3>Швидке виконання робіт</h3>
+                            <div class="text">Наша ефективна виробнича система дозволяє нам забезпечити швидке виконання робіт без втрати якості нашої продукції.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,212 @@
+{% extends "diplom/base.html" %}
+{% block content %}
+{% load static %}
+    <!--Page Title-->
+<!--    <section class="page-title" style="background-image:url('{%static 'diplom/images/background/bg-page-1.jpg' %});">-->
+        <section class="page-title" style="background-image:url('/static/diplom/images/background/bg-page-1.jpeg');">
+        <div class="auto-container">
+            <h1> Про нас</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container clearfix">
+            <div class="pull-left"><h2>Про нас</h2></div>
+            <div class="pull-right">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'index' %}">Головна</a></li>
+                    <li><a href="{% url 'index' %}">Сторінки</a></li>
+                    <li>Про нас</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!--About Us Section-->
+    <section class="about-us-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+                
+                <!--Text Column -->
+            	<div class="column text-column col-md-6 col-sm-12 col-xs-12">
+                	<h2>Обирайте надійність, <a href="{% url 'index' %}">обирайте УБД «Бетон»!</a></h2>
+                    <div class="inner-box">
+                         <div class="text">Лідер у виробництві бетону. З нами будівництво стає міцним фундаментом вашого успіху. Унікальний бетон від УБД «Бетон» - надійний, якісний, екологічно чистий. Наша компанія пропонує широкий асортимент бетонних сумішей, а також індивідуальний підхід до кожного клієнта. Будуйте разом з нами майбутнє, яке триматиметься на міцних плечах нашого бетону!</div>
+ <div class="text">Стабільність і якість - це наші головні пріоритети. Ми поєднуємо досвід і технології, щоб створювати бетон, який витримує навантаження будь-якої складності. Наші продукти допомагають втілювати ваші проекти в реальність безпечно та ефективно. Довіряйте нам свої будівельні потреби, і ми зробимо все можливе, щоб ви отримали найкращий результат.</div>
+                         
+                    </div>
+                </div>
+                
+                <!--Column-->
+                <div class="column image-column col-md-6 col-sm-12 col-xs-12">
+                	<article class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <h2 style="visibility: hidden;">Меню</h2>
+                		<figure class="image-box video-box">
+                        	<img src="{% static 'diplom/images/resource/image-4.jpeg'%}" alt="">
+                            <!-- <a href="#" class="lightbox-image video-link"><div class="icon"><span class="flaticon-play-button-5"></span></div></a> -->
+                        </figure>
+                    </article>
+                </div>
+                
+            </div>
+            
+            <!--Our Services-->
+            <div class="our-services">
+            	  <div class="row">
+                <!--welcome-column-->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!--inner-content-->
+                    <!--service-block-one-->
+                    <div class="service-block-one">
+                        <div class="inner-box">
+                            <!--icon-block-->
+                            <div class="icon-box">
+                                <span class="flaticon-avatar-1"></span>
+                            </div>
+                            <h3>Ми професіонали своєї діяльності</h3>
+                            <div class="text">Наша компанія забезпечує надійність та якість у кожній партії виробленого бетону.</div>
+                        </div>
+                    </div>
+
+                </div>
+                    <!--service-block-one-->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-block-one">
+                        <div class="inner-box">
+                            <!--icon-block-->
+                            <div class="icon-box">
+                                <span class="flaticon-correct"></span>
+                            </div>
+                            <h3>Найсучасніше обладнання</h3>
+                            <div class="text">Ми працюємо з найсучаснішим обладнанням та використовуємо тільки перевірені матеріали, щоб забезпечити оптимальні результати для наших клієнтів.</div>
+                        </div>
+                    </div>
+                </div>
+                    <!--service-block-one-->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-block-one">
+                        <div class="inner-box">
+                            <!--icon-block-->
+                            <div class="icon-box">
+                                <span class="flaticon-compass"></span>
+                            </div>
+                            <h3>Спеціальні технології</h3>
+                            <div class="text">Ми професійний виробник бетону з великим досвідом та високим стандартом якості.</div>
+                        </div>
+                    </div>
+                </div>
+</div>
+            </div>
+            
+        </div>
+    </section>
+        <!--Fact Counter-->
+    <section class="fact-counter" style="background-image:url(images/background/image-3.jpg);">
+        <h2 style="visibility: hidden;">Menu</h2>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="counter-outer clearfix">
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="icon"><span class="flaticon-houses"></span></div>
+                        <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="2500">0</span></div>
+                        <h4 class="counter-title">Проєктів</h4>
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="icon"><span class="flaticon-users"></span></div>
+                        <div class="count-outer"><span class="count-text" data-speed="1000" data-stop="350">0</span> +</div>
+                        <h4 class="counter-title">Найкращих робітників</h4>
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="icon"><span class="flaticon-cup"></span></div>
+                        <div class="count-outer"><span class="count-text" data-speed="1000" data-stop="999">0</span></div>
+                        <h4 class="counter-title">Подяк від клієнтів</h4>
+                    </article>
+                    
+                    <!--Column-->
+                    <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
+                        <div class="icon"><span class="flaticon-paper-plane-1"></span></div>
+                        <div class="count-outer"><span class="count-text" data-speed="1000" data-stop="1600">0</span> +</div>
+                        <h4 class="counter-title">Іновацій</h4>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--best-service-two-->
+    <section class="best-service-two" style="background-image:url(images/background/image-4.jpg);">
+    	<div class="auto-container">
+        	
+            <!--sec-title-->
+            <div class="sec-title-four">
+                <h2>Чому ми найкращі в індустрії</h2>
+            </div>
+            
+        	<div class="row clearfix">
+            
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-house"></span></div>
+                        <h3>20 років досвіду</h3>
+                    </a>
+                </div>
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-users"></span></div>
+                        <h3>Найкращі робітники</h3>
+                    </a>
+                </div>
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-bright-lightbulb"></span></div>
+                        <h3>Іновації </h3>
+                    </a>
+                </div>
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-compass"></span></div>
+                        <h3>Висока якість продукту</h3>
+                    </a>
+                </div>
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-like-1"></span></div>
+                        <h3>Клієнтоорієнтованість</h3>
+                    </a>
+                </div>
+                
+                <!--service-block-two-->
+                <div class="service-block-three col-md-4 col-sm-6 col-xs-12">
+                	<!--inner-box-->
+                	<a href="{% url 'service' %}" class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    	<div class="icon-box"><span class="flaticon-stopwatch"></span></div>
+                        <h3>24/7 індивідуальна підтримка </h3>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}

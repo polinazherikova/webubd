@@ -1,0 +1,65 @@
+{% extends "diplom/base.html" %}
+{% block content %}
+{% load static %}
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'diplom/images/background/testi.jpg'%});">
+        <div class="auto-container">
+            <h1>Контакти</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container clearfix">
+            <div class="pull-left"><h2>Зв'яжись з нами</h2></div>
+            <div class="pull-right">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'index' %}">Головна</a></li>
+                    <li>Контакти</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact Section-->
+    <section class="contact-section">
+    	<div class="auto-container">
+            <div class="sec-title medium"><h2> Раді допомогти Вам</h2></div>
+        	<div class="row clearfix">
+                
+
+                  <!--Column-->
+                <div class="column info-column col-md-6">
+                    <div class="sec-title medium"><h2>Контактні деталі</h2></div>
+                    <!-- <div class="desc-text">There are many variations off +1800 854 5864 available, but the majority have ut suffered alterattions in some forms by injected humour looks events slightly seds believable ut  seds do eiusmod tempor incididunt labore.</div> -->
+                    <div class="info-style-one">
+                        <ul>
+                            <li><div class="icon-box"><span class="flaticon-international-delivery"></span></div><h4>Адреса :</h4><div class="text">вул.Тернівська 4, Павлоград, Дніпропетровська область</div></li>
+                            <li><div class="icon-box"><span class="flaticon-envelope"></span></div><h4>Пошта :</h4><div class="text">gerikove@gmail.com</div></li>
+                            <li><div class="icon-box"><span class="flaticon-phone-call"></span></div><h4>Телефон :</h4><div class="text"> +380976675603 </div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Form Column -->
+            	<div class="column form-column col-md-6">
+                	<div class="sec-title medium"><h2>Задайте нам  питання </h2></div>
+                	<!--form-box-->
+                    <div class="form-box default-form">
+                        <div class="contact-form default-form" style="text-align: center;">
+                                <form style="display: inline-block;text-align: left;" method="POST" action="{% url 'contact' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" style="color:white;background-color: #a67f59;width:200px;height:30px;margin-bottom: 10px;">Відправити</button>
+    </form>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                
+            </div>    
+       	</div>
+   	</section>
+
+{% endblock %}

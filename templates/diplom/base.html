@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    {% load static %}
+<meta charset="utf-8">
+<title>MyIndustry - Industrial HTML Template | About Us</title>
+<!-- Stylesheets -->
+<link href="{% static 'diplom/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'diplom/css/style.css' %}" rel="stylesheet">
+<link rel="shortcut icon" href="{% static 'diplom/images/favicon.ico'%}" type="image/x-icon">
+<link rel="icon" href="{% static 'diplom/images/favicon.ico'%}" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="{% static 'diplom/css/responsive.css'%}" rel="stylesheet">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'diplom/js/respond.js' %}"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+    	<!-- Header Top -->
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="top-right pull-right">
+<!--<div class="social-icon">-->
+<!--    <a href="https://t.me/ubd_beton_bot"><img src="{% static 'diplom/images/icons/telegram.png' %}" class="bi bi-telegram"></img></a>-->
+<!--                        </div>-->
+
+                        <ul>
+                            <li><span class="fa fa-envelope-o"></span>gerikove@gmail.com</li>
+                            <li><span class="fa fa-phone"></span>+380976675603</li>
+                            <li><span class="fa fa-clock-o"></span>Понеділок - Субота : 8:00 - 19:00</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div><!-- Header Top End -->
+
+
+        <!-- Main Box -->
+    	<div class="main-box">
+        	<div class="auto-container">
+            	<div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="index.html"><img src="{% static 'diplom/images/logo.png'%}" alt="" style="width:150px;height:100px;"></a></div>
+                    </div>
+
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="dropdown"><a href="{% url 'index' %}">Головна</a>
+                                    </li>
+                                    <li class="dropdown current"><a href="{% url 'aboutus' %}">Про нас</a>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'service' %}">Роботи</a>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'gallery' %}">Галерея</a>
+                                    </li>
+
+
+
+                                    <li class="dropdown"><a href="{% url 'aboutus' %}">Сторінки</a>
+                                    	<ul>
+                                            <li><a href="{% url 'aboutus' %}">Про нас</a></li>
+                                            <li><a href="{% url 'faqs' %}">Питання/відповідь</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="{% url 'contact' %}">Контакти</a>
+<!--                                       <ul class="submenu">-->
+<!--                                        <li><a href="{% url 'contact' %}">Контакти</a></li>-->
+<!--                                      </ul>-->
+                                    </li>
+
+                                 </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+
+                    </div><!--Nav Outer End-->
+
+                    <!-- Hidden Nav Toggler -->
+                    <div class="nav-toggler">
+                    <button class="hidden-bar-opener" style="margin-top: -13px;"><span class="icon fa fa-bars"></span></button>
+                    </div><!-- / Hidden Nav Toggler -->
+
+                    <!--Search Btn-->
+<!--    <div class="header-search-icon search-box-btn">-->
+<!--        <span class="flaticon-search"></span></div>-->
+            	</div>
+            </div>
+        </div>
+
+    </header>
+    <!--End Main Header -->
+
+
+    <!-- Hidden Navigation Bar -->
+    <section class="hidden-bar right-align">
+        <h2 style="visibility: hidden;">Меню</h2>
+        <div class="hidden-bar-closer">
+            <button class="btn"><i class="fa fa-close"></i></button>
+        </div>
+
+        <!-- Hidden Bar Wrapper -->
+        <div class="hidden-bar-wrapper">
+
+            <!-- .logo -->
+            <div class="logo text-center">
+                <a href="{% url 'index' %}"><img src="{% static 'diplom/images/logo.png'%}" alt="" style="width:70px;height:70px;"></a>
+            </div><!-- /.logo -->
+
+            <!-- .Side-menu -->
+            <div class="side-menu">
+            <!-- .navigation -->
+                <ul class="navigation">
+                    <li class="dropdown"><a href="{% url 'index' %}">Головна</a>
+                                     <ul>
+                                        <li><a href="{% url 'index' %}">Головна 1</a></li>
+                                    </ul>
+                    </li>
+                    <li class="dropdown current"><a href="{% url 'aboutus' %}">Про нас</a>
+                        <ul>
+                            <li><a href="{% url 'aboutus' %}">Про нас</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="{% url 'service' %}">Роботи</a>
+                        <ul class="submenu">
+                            <li><a href="{% url 'service' %}">Наші роботи</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="{% url 'gallery' %}">Галерея</a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'gallery' %}">Галерея</a></li>
+                                        </ul>
+                    </li>
+
+
+                    <li class="dropdown"><a href="{% url 'aboutus' %}">Сторінки</a>
+                        <ul class="submenu">
+                            <li><a href="{% url 'aboutus' %}">Про нас</a></li>
+                            <li><a href="{% url 'faqs' %}">Питання/відповідь</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="{% url 'contact' %}">Контакти</a>
+                                       <ul class="submenu">
+                                        <li><a href="{% url 'contact' %}">Контакти</a></li>
+<!--                                        <li><a href="contact-2.html">Contact 2</a></li>-->
+                                      </ul>
+                     </li>
+                </ul>
+            </div><!-- /.Side-menu -->
+
+        </div><!-- / Hidden Bar Wrapper -->
+    </section>
+    <!-- / Hidden Bar -->
+{% block content%}{%endblock%}
+    <!--Main Footer-->
+    <footer class="main-footer" style="background-image:url(images/background/footer.jpg);">
+    	<div class="auto-container">
+
+            <!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	<!--Big Column-->
+                	<div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="row clearfix">
+
+                            <!--Footer Column-->
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget about-widget">
+                                	<div class="footer-logo"><figure><a href="{% url 'index' %}"><img src="{% static 'diplom/images/logo.png'%}" alt="" style="width:70px;height:70px;"></a></figure></div>
+                                    <div class="widget-content">
+                                        <div class="text">УДБ «Бетон» - провідний виробник бетонних сумішей. Наша компанія пропонує широкий вибір високоякісного бетону для будівництва та реконструкції. Завдяки сучасному обладнанню та суворому контролю якості, ми забезпечуємо надійність і якість у кожній поставці. Довірте свої будівельні проекти нам!</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <h2>Швидкі посилання</h2>
+                                <div class="footer-column col-md-6">
+                            	<div class="footer-widget tags-widget">
+
+                                    <div class="widget-content">
+                                    	<ul class="">
+                                        	<li><a href="{% url 'index' %}">Головна</a></li>
+                                            <li><a href="{% url 'aboutus' %}">Про нас</a></li>
+                                            <li><a href="{% url 'service' %}">Роботи</a></li>
+                                        </ul>
+                                    </div>
+                                </div></div>
+                               <div class="footer-column col-md-6">
+                                <div class="footer-widget tags-widget">
+
+                                    <div class="widget-content">
+                                        <ul class="">
+                                            <li><a href="{% url 'service' %}">Наші роботи</a></li>
+                                            <li><a href="{% url 'faqs' %}">Питання/відповідь</a></li>
+                                            <li><a href="{% url 'contact' %}">Контакти</a></li>
+                                        </ul>
+                                    </div>
+                                </div></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--Big Column-->
+                	<div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="row clearfix">
+
+                            <!--Footer Column-->
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget posts-widget">
+                                	<h2>Зв'яжіться з нами</h2>
+                                    <div class="widget-content">
+                                    	<ul class="contact-info">
+                                            <li><span class="icon fa fa-map-marker"></span>вул.Тернівська 4, Павлоград, Дніпропетровська область</li>
+                                            <li><span class="icon fa fa-phone"></span>+380976675603</li>
+                                            <li><span class="icon fa fa-envelope-o"></span>gerikove@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                        	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            	<div class="footer-widget contact-widget">
+                                	<h2>Швидкий зв'язок</h2>
+                                    <div class="widget-content">
+<div class="inquiry-form">
+    <form method="POST" action="{% url 'index' %}">
+        {% csrf_token %}
+        {{ quick_contact_form.as_p }}
+        <button type="submit"  style="color:white;background-color: #a67f59;">Відправити</button>
+    </form>
+    {% if success_message %}
+        <p>{{ success_message }}</p>
+    {% endif %}
+</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                 </div>
+             </div>
+
+        </div>
+
+        <!--Footer Bottom-->
+          <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="clearfix">
+                    <div class="pull-left"><div class="copyright"><p>© УБД "БЕТОН" 2024 </p></div></div>
+                    <div class="pull-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!--End pagewrapper-->
+
+    <!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-unchecked"></span></div>
+	<div class="popup-inner">
+
+    	<div class="search-form">
+        	<form method="post" action="#">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+
+            <br>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+
+</div>
+<script src="{% static 'diplom/js/jquery.js'%}"></script>
+<script src="{% static 'diplom/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'diplom/js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+<script src="{% static 'diplom/js/revolution.min.js'%}"></script>
+<script src="{% static 'diplom/js/jquery.fancybox.pack.js'%}"></script>
+<script src="{% static 'diplom/js/jquery.fancybox-media.js'%}"></script>
+<script src="{% static 'diplom/js/isotope.js'%}"></script>
+<script src="{% static 'diplom/js/owl.js'%}"></script>
+<script src="{% static 'diplom/js/wow.js'%}"></script>
+<script src="{% static 'diplom/js/script.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+{% extends "diplom/base.html" %}
+{% block content %}
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url('/static/diplom/images/background/image-1.jpeg');">
+        <div class="auto-container">
+            <h1>Питання/відповідь</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container clearfix">
+            <div class="pull-left"><h2>Питання/відповідь</h2></div>
+            <div class="pull-right">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'index' %}">Головна</a></li>
+                    <li><a href="{% url 'index' %}">Сторінки</a></li>
+                    <li>Питання/відповідь</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--FAQs Section-->
+    <section class="faqs-section">
+        <div class="auto-container">
+            
+            <div class="faqs-container">
+                <!--Accordion Box-->
+                <ul class="accordion-box">
+                    
+                    <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div>Які основні переваги вашого бетону порівняно з конкурентами?</div>
+                        <div class="acc-content current">
+                            <div class="content clearfix">
+                                <p> Наш бетон відзначається високою міцністю, стійкістю до зношування та екологічною чистотою, забезпечуючи надійну основу для будівництва.</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                   
+                    
+                    <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div> Які види бетону доступні вашим клієнтам УБД "Бетон"?</div>
+                        <div class="acc-content">
+                            <div class="content clearfix">
+                                <p>Ми пропонуємо широкий асортимент бетонних сумішей, включаючи звичайний, підсиленний, водонепроникний та спеціалізовані суміші для конкретних потреб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                     <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div>Як ви гарантуєте якість вашого бетону?</div>
+                        <div class="acc-content">
+                            <div class="content clearfix">
+                                <p>Ми використовуємо тільки найсучасніші технології виробництва та використовуємо строгий контроль якості на кожному етапі виробництва. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                    
+                    <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div> Чи можна замовити індивідуальну розробку бетонної суміші для конкретного проекту?</div>
+                        <div class="acc-content">
+                            <div class="content clearfix">
+                                <p>Так, ми надаємо послугу індивідуального підходу до кожного клієнта, щоб задовольнити їхні унікальні вимоги. </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div>Які обсяги замовлень ви можете обробляти?</div>
+                        <div class="acc-content">
+                            <div class="content clearfix">
+                                <p>Ми можемо обробляти як малі, так і великі обсяги замовлень, забезпечуючи своєчасну поставку та високу якість продукції.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Block-->
+                    <li class="accordion block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> <span class="icon icon-minus fa fa-angle-down"></span></div>Чи надаєте ви послуги доставки бетону на місце будівництва?</div>
+                        <div class="acc-content">
+                            <div class="content clearfix">
+                                <p> Так, ми маємо власний парк транспортних засобів і можемо забезпечити доставку бетону прямо на ваш об’єкт будівництва згідно з вашим графіком.</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul><!--End Accordion Box-->
+            </div>
+{% endblock %}
